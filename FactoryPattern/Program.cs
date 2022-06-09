@@ -8,7 +8,9 @@ namespace FactoryPattern
     {
         static void Main(string[] args)
         {
-            /*
+
+            
+            
             Console.WriteLine("How many wheels do you want on your vehicle?");
             int answer;
             int.TryParse(Console.ReadLine(), out answer);
@@ -38,12 +40,14 @@ namespace FactoryPattern
                 vehicle.Drive();
             }
 
-            */
+            
+            
+            Console.ReadLine();
             string userInput;
             bool response;
             do
             {
-                Console.Clear();
+                
                 response = true;
                 Console.WriteLine($"Okay John, what Database would you like to use?");
                 Console.WriteLine("Type: sql");
@@ -111,16 +115,22 @@ namespace FactoryPattern
             } while (!response);
                 var jesiahsDB = DataAccessFactory.DataAccessType(userInput3);
 
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
 
 
 
 
-
-                var productsA = alinasDB.LoadData();
+            var productsA = alinasDB.LoadData();
+            Console.WriteLine("--------------------------");
                 var productsJ = johnsDB.LoadData();
-                var productsJe = jesiahsDB.LoadData();
+            Console.WriteLine("--------------------------");
+            var productsJe = jesiahsDB.LoadData();
+            Console.WriteLine("--------------------------");
 
-                foreach (var product in productsA)
+            foreach (var product in productsA)
                 {
                     Console.WriteLine($"Item:{product.Name}, Price:${product.Price}");
                 }

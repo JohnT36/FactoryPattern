@@ -8,7 +8,7 @@ namespace FactoryPattern
     {
         public static List<Product> Products = new List<Product>()
         {
-             new Product() { Name = "Phone", Price = 700},
+             new Product() { Name = "Phone", Price = 800},
              new Product() { Name = "Entertainment Stand", Price = 150 },
              new Product() { Name = "Rocket Ship", Price = 1000000}
 

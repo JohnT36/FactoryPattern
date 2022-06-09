@@ -9,7 +9,7 @@ namespace FactoryPattern
         public Motorcycle()
         {
         }
-        public int Tires { get; set; } = 4;
+        public int Tires { get; set; } = 2;
         
 
         public void Drive()
